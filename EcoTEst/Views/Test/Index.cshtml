@@ -1,0 +1,21 @@
+﻿@using Newtonsoft.Json
+
+@section Scripts
+{
+    <script src='@Url.Content("~/Scripts/testPage.js")'></script> 
+}
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="jumbotron" id="test"></div>
+<script>
+    let questions = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Test));
+</script>
+
+
+
+
+
+
