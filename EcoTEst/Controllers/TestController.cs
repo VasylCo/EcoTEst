@@ -26,10 +26,9 @@ namespace EcoTEst.Controllers
         [HttpPost]
         public string Result(string result)
         {
-            string answer = "no result";
             if (result==null)
             {
-                ViewBag.Result = answer;
+                ViewBag.Result = "no result";
             }
 
             ViewBag.Result = result;
